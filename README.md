@@ -1,2 +1,2 @@
 # buteburst
-Creating a portfolia site for me and my friend
+Creating a portfolio site for me and my friend
