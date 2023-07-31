@@ -1,0 +1,265 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+/* galindo-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Galindo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/galindo-v20-latin-regular.woff2') format('woff2');
+}
+
+:root {
+	--color-primary-light: #ffff;
+	--color-primary-dark: #070707;
+	--color-secondary-red: #FF0000;
+	--color-secondary-black: #000000;
+	--color-secondary-grey: #747272;
+}
+
+/*Base*/
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: var(--color-secondary-black);
+	color: var(--color-secondary-red);
+	line-height: 1.1;
+}
+
+body {
+	background-color: var(--color-primary-dark);
+	color: var(--color-primary-light);
+	font-family: 'Roboto' serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: var(--color-primary-light);
+	text-decoration: none;
+	font-style: normal;
+}
+
+address {
+	font-style: normal;
+}
+
+.container {
+	width: 100%;
+}
+
+/*Header*/
+
+.header-list:hover {
+	color: var(--color-primary-light);
+}
+
+.header-container {
+	display: flex;
+	justify-content: center;
+}
+
+.header-nav {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-menu {
+	display: flex;
+	gap: 64px;
+}
+
+.header-link {
+	display: flex;
+	gap: 26px;
+	padding-right: 97px;
+}
+
+.header-logo {
+	padding-left: 51px;
+}
+
+/*Hero section*/
+
+.hero-section {
+	background-image: url('../images/hero-back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-title {
+	color: var(--color-secondary-red);
+	margin: 0;
+	padding: 175px 0px 16px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-main-title {
+	color: var(--color-primary-light);
+	text-transform: uppercase;
+	font-size: 140px;
+	line-height: 0.7;
+	margin: 0;
+	padding-bottom: 26px;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-span {
+	color: var(--color-secondary-red);
+	text-transform: uppercase;
+	font-size: 140px;
+}
+
+.hero-button {
+	background-color: var(--color-secondary-red);
+	border: 2px solid var(--color-secondary-red);
+	border-radius: 16px;
+	width: 367px;
+	height: 84px;
+	color: var(--color-primary-dark);
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 0.9;
+}
+
+.hero-text {
+	color: var(--color-primary-light);
+	font-size: 12px;
+	padding-bottom: 156px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 175px;
+	padding-bottom: 156px;
+
+}
+/*Use us section*/
+
+.use-us-title {
+	padding-top: 138px;
+	padding-bottom: 42px;
+	align-items: center;
+}
+
+.use-us-span {
+	color: var(--color-secondary-red);
+}
+
+.use-us-text {
+	font-size: 21px;
+	line-height: 0.9;
+}
+
+.format {
+	padding-bottom: 129px;
+}
+
+.end {
+	padding-bottom: 190px;
+}
+
+/*Choose us section*/
+
+.choose-us {
+	background-color: var(--color-primary-light);
+	color: var(--color-primary-dark);	
+}
+
+.choose-us-title {
+	font-size: 60px;
+	padding-top: 78px;
+	padding-bottom: 90px;
+	margin: 0;
+}
+
+.choose-us-span {
+	color: var(--color-secondary-red);
+}
+
+.choose-us-text {
+	font-size: 18px;
+	line-height: 0.9;
+	font-family: 'Galindo' serif;
+}
+
+.choose-us-article {
+	padding-bottom: 95px;
+}
+
+/*Prices section*/
+
+.prices-title {
+	font-size: 60px;
+	padding-top: 57px;
+	margin: 0;
+}
+
+.prices-span {
+	color: var(--color-secondary-red);
+}
+
+/*Contact section*/
+
+.contact-section {
+	background-color: var(--color-primary-light);
+}
+
+.contact-title {
+	color: var(--color-primary-dark);
+	font-size: 60px;
+	padding-top: 84px;
+	padding-bottom: 69px;
+	margin: 0;
+}
+
+.contact-span {
+	color: var(--color-secondary-red);
+}
+
+/*Footer*/
+
+footer {
+	padding-top: 33px;
+}
+
+.footer-nav {
+	line-height: 1.1;
+	font-size: 19px;
+}
+
+.footer-list:hover {
+	color: var(--color-secondary-red);
+}
+
+.footer-policy {
+	font-size: 16px;
+}
+
+.footer-data {
+	color: var(--color-secondary-grey);
+}
