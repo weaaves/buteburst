@@ -1,28 +1,28 @@
 /* roboto-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+	font-display: swap;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
 }
 
 /* galindo-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Galindo';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/galindo-v20-latin-regular.woff2') format('woff2');
+	font-display: swap;
+	font-family: 'Galindo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/galindo-v20-latin-regular.woff2') format('woff2');
 }
 
 /* montserrat-regular - cyrillic_latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2');
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 :root {
@@ -47,8 +47,8 @@ header {
 }
 
 body {
-	background-color: var(--color-primary-dark);
-	color: var(--color-primary-light);
+	background-color: #FFFAF1;
+	color: var(--color-primary-dark);
 	font-family: 'Montserrat';
 	font-size: 18px;
 	font-weight: 400;
@@ -68,6 +68,14 @@ a {
 
 address {
 	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+p{
+	margin: 0;
 }
 
 .container {
@@ -244,18 +252,24 @@ address {
 /*Choose us section*/
 
 .choose-us {
-	background-color: var(--color-primary-light);
 	color: var(--color-primary-dark);	
 }
 
 .choose-us-title {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	font-size: 60px;
-	padding-top: 57px;
 	padding-bottom: 70px;
 	margin: 0;
 	gap: 20px;
+}
+.choose-us-title::before, .choose-us-title::after {
+	background-color: var(--color-primary-dark);
+	display: flex;
+	width: 110px;
+	height: 2px;
+	content: '';
 }
 
 .choose-us-span {
@@ -285,7 +299,7 @@ address {
 .choose-us-flex-container {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 95px;
+	padding-bottom: 70px;
 }
 
 .choose-us-logo {
@@ -303,11 +317,19 @@ address {
 .prices-title {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 20px;
 	font-size: 60px;
-	padding-top: 57px;
 	padding-bottom: 70px;
-	margin: 5px 0px 0px 0px;
+	margin: 0;
+}
+
+.prices-title::before, .prices-title::after {
+	background-color: var(--color-primary-dark);
+	display: flex;
+	width: 350px;
+	height: 2px;
+	content: '';
 }
 
 .prices-span {
@@ -319,33 +341,56 @@ address {
 	justify-content: center;
 	gap: 145px;
 	margin: 0;
-	padding-bottom: 99px;
+	padding-bottom: 70px;
 }
 
 .prices-card {
 	width: 237px;
 	height: 336px;
-	background-color: var(--color-primary-light);
+	background-color: var(--color-primary-dark);
 	border-radius: 0px 80px;
+	color: var(--color-primary-light);
+	background-image: url('../images/card-back.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 }
 
+.prices-card-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 180px 16px 20px 16px;
+}
+
+.formatting {
+	text-decoration: underline;
+}
 
 /*Contact section*/
 
 .contact-section {
-	background-color: var(--color-primary-light);
+
 }
 
 .contact-title {
 	display: flex;
 	gap: 20px;
 	justify-content: center;
+	align-items: center;
 	color: var(--color-primary-dark);
 	font-size: 60px;
-	padding-top: 57px;
 	padding-bottom: 70px;
 	margin: 0;
+}
+
+.contact-title::before, .contact-title::after {
+	background-color: var(--color-primary-dark);
+	display: flex;
+	width: 300px;
+	height: 2px;
+	content: '';
 }
 
 .contact-span {
@@ -377,6 +422,8 @@ address {
 	padding-top: 51px;
 	padding-bottom: 24px;
 	justify-content: center;
+	color: var(--color-primary-light);
+	font-family: 'Montserrat';
 }
 
 .contact-card {
@@ -430,6 +477,7 @@ address {
 footer {
 	padding-top: 33px;
 	padding-bottom: 32px;
+	background-color: var(--color-primary-dark);
 }
 
 .footer-nav {
